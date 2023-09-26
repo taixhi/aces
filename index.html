@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!-- saved from url=(0017)https://re.kv.io/ -->
+<html lang="en-us">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="Amherst College South East Asian Students Association">
+    <meta name="description" content="">
+    <title>Amherst College SEASA</title>
+   
+    <style>
+        :root{
+            --headings-and-dates:#757575;
+            --headline-date-color:#6d7275;
+            --link-color:#3373d4;
+            --h1-color:#222;
+            --body-color:#444;
+            --h2-and-description:#aaa;
+            --smaller-header-color:#333;
+            --home-headers:#333;
+            --nav-bar-background:#fff;
+            --code-background:#fff;
+            --code-color:#555;
+            --code-box-shadow:#E4EBF2;
+            --post-h2-header:#111;
+            --bold-text:#1E2025;
+            --table-header-border-bottom:#dadadc;
+            --td-border-top:#eaeaea;
+            --td-odd-background:#fcfcfc
+        }
+        @media (prefers-color-scheme:dark){
+            body{
+                background-color:#1f1f1f
+            }
+            :root{
+                --headings-and-dates:#757575;
+                --headline-date-color:#757575;
+                --link-color:#50b7ff;
+                --h1-color:#f1f1f1;
+                --body-color:#d0d0d0;
+                --h2-and-description:#aaa;
+                --smaller-header-color:#ddd;
+                --home-headers:rgb(191, 191, 191);
+                --nav-bar-background:#1f1f1f;
+                --code-background:#1f1f1f;
+                --code-color:#cecece;
+                --code-box-shadow:#3f3f3f;
+                --post-h2-header:#f0f0f0;
+                --bold-text:#ffffff;
+                --table-header-border-bottom:white;
+                --td-border-top:rgb(148, 148, 148);
+                --td-odd-background:#303030
+            }
+        }
+        a,body,center,div,footer,h1,h2,h3,h4,h5,h6,header,html,img,li,nav,p,section,ul{
+            border:0;
+            font-size:100%;
+            font:inherit;
+            vertical-align:baseline;
+            margin:0;
+            padding:0
+        }
+        footer,header,nav,section{
+            display:block
+        }
+        body{
+            line-height:1
+        }
+        *,:after,:before{
+            -moz-box-sizing:border-box;
+            -webkit-box-sizing:border-box;
+            box-sizing:border-box
+        }
+        @font-face{
+            font-family:icons;
+            src:url(../fonts/icons.eot);
+            src:url(../fonts/icons.eot#iefix) format('embedded-opentype'),url(../fonts/icons.woff) format('woff'),url(../fonts/icons.ttf) format('truetype'),url(../fonts/icons.svg#icons) format('svg');
+            font-weight:400;
+            font-style:normal
+        }
+        [class*=" icon-"]:before,[class^=icon-]:before{
+            font-family:icons;
+            font-style:normal;
+            font-weight:400;
+            display:inline-block;
+            text-decoration:inherit;
+            text-align:center;
+            font-variant:normal;
+            text-transform:none;
+            line-height:1em
+        }
+        h3,h4,h5,p{
+            margin-bottom:20px
+        }
+        body,html{
+            height:100%
+        }
+        body{
+            font:20px/1 helvetica neue,Helvetica,Arial,sans-serif;
+            color:var(--body-color);
+            -webkit-font-smoothing:antialiased;
+            text-rendering:optimizeLegibility
+        }
+        h1{
+            font-size:30px;
+            letter-spacing:-1px;
+            color:var(--h1-color);
+            font-weight:700
+        }
+        h2{
+            font:italic 19px/1.3em Georgia,serif;
+            color:var(--headings-and-dates)
+        }
+        .profile #top-wrapper,.profile #wrapper{
+            padding:40px 40px 0;
+            max-width:700px;
+            margin:0 auto
+        }
+        .profile #header{
+            margin-bottom:60px;
+            text-align:center;
+            position:relative
+        }
+        .profile h1{
+            font-weight:400;
+            letter-spacing:0;
+            font-size:20px;
+            color:var(--h1-color)
+        }
+        .profile h2{
+            font-size:20px;
+            font-weight:300;
+            color:var(--h2-and-description);
+            margin-top:10px;
+            font-family:helvetica neue,Helvetica,Arial,sans-serif;
+            font-style:normal
+        }
+        nav.main-nav{
+            padding:20px 20px 0;
+            background:var(--nav-bar-background);
+            margin:0 auto;
+            text-align:right;
+            z-index:100
+        }
+        nav.main-nav a{
+            top:8px;
+            right:6px;
+            padding:8px 12px;
+            color:var(--link-color);
+            font-size:15px;
+            line-height:1.35;
+            border-radius:3px
+        }
+        nav.main-nav a:hover{
+            text-decoration:none
+        }
+        @media (max-width:700px){
+            nav.main-nav{
+                padding:20px 10px 0 0;
+                background:var(--nav-bar-background);
+                margin:0 auto;
+                text-align:right;
+                z-index:100
+            }
+            nav.main-nav a{
+                top:8px;
+                right:6px;
+                padding:8px;
+                color:var(--link-color);
+                font-size:13px;
+                line-height:1.35;
+                border-radius:3px
+            }
+        }
+        #top-wrapper,#wrapper{
+            max-width:700px;
+            margin:0 auto;
+            padding:60px 20px 100px
+        }
+        #top-wrapper.home,#wrapper.home{
+            max-width:800px;
+            margin:0 auto;
+            padding:0 40px 20px
+        }
+        #title,#title:hover,a{
+            text-decoration:none;
+            color:var(--link-color)
+        }
+        p a{
+            color:var(--link-color)
+        }
+        a{
+            -webkit-transition:all .15s ease;
+            -moz-transition:all .15s ease;
+            -ms-transition:all .15s ease;
+            -o-transition:all .15s ease;
+            transition:all .15s ease
+        }
+        ul{
+            margin:0;
+            padding:0
+        }
+        li{
+            list-style-position:outside;
+            margin-left:1.5em
+        }
+        ul>li{
+            list-style-type:disc
+        }
+        p{
+            line-height:1.7
+        }
+        #title{
+            display:inline-block;
+            line-height:100%;
+            font-weight:500;
+            font-size:19px;
+            margin:0;
+            padding-bottom:20px
+        }
+        .description{
+            float:right;
+            font:italic 14px/1.4em Georgia,serif;
+            color:var(--h2-and-description)
+        }
+        .home h1{
+            font-size:30px;
+            letter-spacing:-1px;
+            color:var(--h1-color);
+            font-weight:700
+        }
+        .home h2{
+            font:italic 19px/1.3em Georgia,serif;
+            color:var(--headings-and-dates)
+        }
+        h3,h4,h5{
+            color:var(--smaller-header-color)
+        }
+        h3{
+            font-size:20px;
+            font-weight:400
+        }
+        h4{
+            font-size:16px;
+            font-weight:700
+        }
+        h5{
+            font-size:15px;
+            font-weight:700
+        }
+        h6{
+            font-size:13px;
+            font-weight:700;
+            color:#666;
+            margin-bottom:6px
+        }
+        img{
+            width:100%;
+            max-width:100%;
+            border-radius:3px
+        }
+        #footer{
+            margin-top:100px
+        }
+        @media screen and (max-width:540px){
+            #top-wrapper,#wrapper{
+                padding:20px
+            }
+            #header{
+                margin-bottom:60px
+            }
+            #footer{
+                margin-top:60px
+            }
+            #title{
+                font-size:17px
+            }
+            h1{
+                font-size:26px
+            }
+        }
+        h1.index-title{
+            font-size:24pt;
+            color:var(--home-headers);
+            margin-top:30px;
+            font-weight:300
+        }
+        .home h1{
+            margin-top:1em;
+            margin-bottom:.9em;
+            font-weight:400;
+            color:var(--home-headers)
+        }
+        li{
+            line-height:32px;
+            margin-bottom:6px
+        }
+        a:hover{
+            text-decoration:underline;
+            text-decoration-thickness:5%
+        }
+        </style>
+</head>
+
+<body>
+    <div class="profile">
+        <section id="top-wrapper">
+            <header id="header">
+                <h1 class="index-title">ACES</h1>
+                <h2>Amherst College Entrepreneur's Society</h2>
+            </header>
+        </section>
+    </div>
+    <section id="wrapper" class="home">
+        <p>Current board members:</p>
+        <ul>
+            <li>President: <a href="https://taichikato.com/">Taichi Kato '24</a></li>
+            <li>President: <a href="https://www.maksymsherman.com/about/">Maksym Sherman '24</li>
+            <li>President: <a href="https://www.delfran.co/about/">Alex DelFranco '24</a></li>
+        </ul></p>
+        <footer id="footer"></footer>
+    </section>
+</body>
+
+</html>
